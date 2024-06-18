@@ -14,7 +14,7 @@ class Skocko {
 
     // Promenljive
     // s=Skocko t=Tref p=Pik k=Karo h=Herc z=Zvezda
-    static final char ZnakoviZaSkocka[] = { 'S', 'T', 'P', 'K', 'H', 'Z' };
+    static final char ZnakoviZaSkocka[] = {'S' , 'T', 'P', 'K', 'H', 'Z' };
     static final int DuzinaNiz = 4;
     static int Pokusaji = 6;
 
@@ -27,6 +27,8 @@ class Skocko {
         for (int i = 0; i < 4; i++) {
             Kombinacija[i] = ZnakoviZaSkocka[(int) Math.floor(Math.random() * Duzina)];
         }
+        
+        
 
         return Kombinacija;
     }
@@ -55,6 +57,7 @@ class Skocko {
                     if (Kombinacija[i] == UpisaniZnakovi[j] && Kombinacija[j] != UpisaniZnakovi[j]) {
                         NaLosemMestu++;
                         UpisaniZnakovi[j] = 'X';
+                        break;
                     }
                 }
             }
