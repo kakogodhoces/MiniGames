@@ -1,6 +1,6 @@
 
 //Sluzi za pokretanje igre
-//TODO: Zavrsiti sve i fajl...
+
 
 
 import java.util.InputMismatchException;
@@ -33,10 +33,6 @@ public class Main {
             //Vesala
             Vesala.main(args);
         }
-        
-        
-        
-        
     }
 
 }
